@@ -1,0 +1,74 @@
+h1 {
+    color: green;
+    margin-bottom: 50px;
+    font-family: 'Geneva';
+}
+.general{
+    display: flex;
+    justify-content: space-around;
+}
+
+.check {
+    padding-top: 50px;
+    border: 3px solid green;
+    border-radius: 60px;
+    width: 450px;
+    color: green;
+    
+}
+
+.check h1 {
+    color: green;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    font-size: 28px;
+    font-weight: bolder;
+
+    
+}
+
+.check h2 {
+    padding-top: 40px;
+    color: green;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+
+}
+
+img {
+    width: 80px;
+    height: 70px;
+    border-radius: 45px;
+}
+
+th {
+    color: green;
+    font-size: 12px;
+    font-family: 'Geneva';
+
+}
+
+th, td {
+    border: 3px  green;
+    padding: 12px;
+    text-align: center;
+    border-radius: 45px;
+    font-family: 'Geneva';
+}
+
+th, h1, h2 {
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: green;
+}
+
+p{
+    font-size: 20px;
+}

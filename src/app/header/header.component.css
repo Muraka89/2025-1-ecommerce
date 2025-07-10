@@ -1,0 +1,53 @@
+header {
+    padding: 20px;
+  } 
+
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  
+  } 
+
+  h1 {
+    color: green;
+    font-size: 50px;
+    font-weight: 400;
+  } 
+  #logo-title {
+    font-weight: bold;
+  } 
+  .menu {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border: 3px solid green;
+    border-radius: 15px;
+    margin-top: 12px;
+  } 
+  .menu li {
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    color: green;
+  } 
+
+  .menu li a {
+    text-decoration: none;
+    color: green;
+  } 
+
+  li:hover {
+    background-color: greenyellow;
+    border-radius: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+h1:hover {
+    cursor: pointer;
+}
+
+
+  

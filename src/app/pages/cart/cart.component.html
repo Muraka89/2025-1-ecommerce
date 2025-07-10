@@ -1,0 +1,44 @@
+<h1>CARRITO</h1>
+
+<div class="general">
+    <div class="tabla">
+
+        @if(cartService.cartProduct.length>0){
+        <table>
+            <tr>
+                <th>SKU</th>
+                <th>PRODUCTO</th>
+                <th>NOMBRE</th>
+                <th>VALOR</th>
+                <th>Eliminar Producto</th>
+            </tr>
+            @for(tenis of cartService.cartProduct; track tenis; let i=$index){
+            <tr>
+                <td>{{ tenis.sku }}</td>
+                <td><img height="200px" [src]="tenis.image" alt=""></td>
+                <td>{{ tenis.name }}</td>
+                <td>{{ tenis.price | currency }}</td>
+                <td>
+                    <button class="btn" (click)="eraseProduct(tenis)">Eliminar</button>
+                </td>
+            </tr>
+            }
+        </table>
+
+        } @else {
+        <p>No hay productos agregados</p>
+        }
+    </div>
+
+    <div class="check">
+
+        <h1>Lista de valores</h1>
+        <ol>
+            @for (tenis of cartService.cartProduct; track tenis) {
+            <li>{{ tenis.name }}</li>
+            }
+        </ol>
+        <h2>Total de la venta: {{ cartService.getTotal() | currency }}</h2>
+    </div>
+
+</div>

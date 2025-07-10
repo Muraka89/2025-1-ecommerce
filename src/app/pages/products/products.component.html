@@ -1,0 +1,11 @@
+<div class="lista">
+@for (tenis of productService.products; track $index) {
+        <div class="product-card">
+            <img height="200px"  [src]="tenis.image" alt="">
+            <p>{{tenis.name}}</p>
+            <p>{{ tenis.price | currency }}</p>
+            <button (click)="addToCart(tenis)">Agregar al carrito</button>
+        </div>
+    
+}
+</div>

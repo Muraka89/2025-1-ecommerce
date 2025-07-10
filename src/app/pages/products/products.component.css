@@ -1,0 +1,46 @@
+.lista {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+}
+.product-card {
+    border: 5px solid green;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: none;
+    color: green;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 36px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: green;
+    color: aliceblue;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: beige;
+    color: black;
+}
+
+.product-card:hover {
+    width: 100%;
+    object-fit:contain;
+    border-radius: 8px;
+    transform: scale(1.1);
+  } 
+
